@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 100px;
+}
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: url(/cover1.jpg);
+    background-size: cover;
+    background-position: right top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.hero h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+.hero h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.btn {
+    position: relative;
+    background: #cfcfcf;
+    display: inline-block;
+    color: #111;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.btn:hover {
+    background: #2196f3;
+    transition: 0.5s;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.5s;
+}
+header.sticky {
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header.sticky .logo {
+    color: #111;
+}
+header.sticky ul li a {
+    color: #111;
+}
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.contentBox {
+    padding-right: 30px;
+}
+.w50 {
+    min-width: 50%;
+}
+.contentBox h3 {
+    margin: 10px;
+    font-size: 24px;
+}
+img {
+    max-width: 100%;
+}
+.learnings {
+    background: #111;
+}
+.heading.white {
+    color: #fff;
+}
+.learnings .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.learnings .content .learningBox {
+    padding: 40px 50px;
+    color: #fff;
+    background: #222;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.learnings .content .learningBox:hover {
+    background: #2196f3;
+}
+.learnings .content .learningBox img {
+    max-width: 80px;
+    filter: invert(1);
+}
+.learnings .content .learningBox h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.projects .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.projects .content .workBox {
+    width: 50%;
+    padding: 20px;
+}
+.projects .content img {
+    max-width: 100%;
+} 
+
+.contacts {
+    background: #111;
+}
+.formBox {
+    min-width: 60%;
+}
+.formBox form {
+    display: flex;
+    flex-direction: column;
+}
+.formBox form h3, .contactInfo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formBox form input, .formBox form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+} 
+.formBox form textarea {
+    min-height: 200px;
+}
+.formBox form input::placeholder, 
+.formBox form textarea::placeholder {
+    color: #aaa;
+}
+.formBox form input[type="submit"] {
+    width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactInfo {
+    min-width: 40%;
+}
+.contactInfoBox {
+    position: relative;
+}
+.contactInfoBox .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfoBox .box .text {
+    display: flex;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactInfoBox .box .icon {
+    color: #fff;
+}
+.copyright {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width:990px) 
+{
+    header, header.sticky {
+        padding: 20px 50px;
+    }
+
+    .menu {
+        position: fixed;
+        top: 65px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    header ul li a {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(/images/menu.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer; 
+    }
+    .toggle.active {
+        background: url(/images/close.png);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer; 
+    }
+
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 100px 50px;
+    }
+
+    .hero {
+        padding: 150px 50px 100px;
+    }
+    .hero h2 {
+        font-size: 1.5em;
+    }
+    .hero h3 {
+        font-size: 1em;
+    }
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .heading h2 {
+        font-size: 24px;
+    }
+    .contentBox h3 {
+        font-size: 20px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .W50 {
+        margin: 20px 0;
+    }
+
+    .learnings .content .learningBox {
+        margin: 10px;
+    }
+
+    .projects .content .workBox {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .contactInfo {
+        margin: 20px 0;
+    }
+
+    .formBox form input[type="submit"] {
+        align-self: center;
+        width: 200px;
+    }
+    
+}
+
+@media (min-width:990px)
+{
+    .W50 img{
+        max-width: 314px;
+        height: 314px;
+        border-radius: 200px;
+    }
+}
