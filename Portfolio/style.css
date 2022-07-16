@@ -50,6 +50,7 @@ section {
 }
 .btn:hover {
     background: #2196f3;
+    color: #fff;
     transition: 0.5s;
 }
 header {
@@ -120,12 +121,20 @@ header ul li a {
 .w50 {
     min-width: 50%;
 }
+.order{
+    display: flex;
+    flex-direction: column-reverse;
+}
 .contentBox h3 {
     margin: 10px;
     font-size: 24px;
 }
-img {
-    max-width: 100%;
+/* img {
+    max-width: 50%;
+} */
+#profile_IMG{
+    max-width: 50%;
+    border-radius: 50%;
 }
 .learnings {
     background: #111;
@@ -148,9 +157,17 @@ img {
     text-align: center;
     transition: 0.5s;
 }
+.learnings .content .learningBox a{
+    color: #2196f3;
+}
 .learnings .content .learningBox:hover {
     background: #2196f3;
 }
+.learnings .content .learningBox:hover a{
+    color: #222;
+    transition: 0.5s;
+}
+
 .learnings .content .learningBox img {
     max-width: 80px;
     filter: invert(1);
@@ -347,9 +364,19 @@ img {
 
 @media (min-width:990px)
 {
-    .W50 img{
-        max-width: 314px;
-        height: 314px;
-        border-radius: 200px;
+    .contentBox{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contentBox p{
+        max-width: 70%;
+    }
+    #profile_IMG{
+        max-width: 364px;
+        max-height: 364px;
     }
 }
