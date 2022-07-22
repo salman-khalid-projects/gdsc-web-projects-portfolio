@@ -118,9 +118,7 @@ header ul li a {
 .contentBox {
     padding-right: 30px;
 }
-.w50 {
-    min-width: 50%;
-}
+
 .order{
     display: flex;
     flex-direction: column-reverse;
@@ -129,12 +127,10 @@ header ul li a {
     margin: 10px;
     font-size: 24px;
 }
-/* img {
-    max-width: 50%;
-} */
 #profile_IMG{
     max-width: 50%;
     border-radius: 50%;
+    border: 10px solid rgba(0, 0, 0, 0.2);
 }
 .learnings {
     background: #111;
@@ -265,7 +261,7 @@ header ul li a {
 @media (max-width:990px) 
 {
     header, header.sticky {
-        padding: 20px 50px;
+        padding: 20px 20px;
     }
 
     .menu {
@@ -334,6 +330,7 @@ header ul li a {
     }
     .contentBox h3 {
         font-size: 20px;
+        text-align: center;
     }
     .content {
         flex-direction: column;
@@ -374,6 +371,7 @@ header ul li a {
     
     .contentBox p{
         max-width: 70%;
+        text-align: start;
     }
     #profile_IMG{
         max-width: 364px;
